@@ -1,0 +1,44 @@
+Lecture 15
+
+Q: How many samples are needed to have confidence in result?
+A: Fortunately, there is a very solid sef of mathematics that lets us answer this question in a good way.
+
+>> At the root of all of it is the notion of variance.
+
+** Variance is a measure of how mush spread there is in the possible outcomes.
+
+In order to talk about variance, given this definition, we need to have different outcomes(plural), which is why we
+always want to run multiple trails rather than do sth(say on trial with many flips).
+
+Q: Why would I do multiple trails adding up to a million rather than 1 trail of a million?
+A: The reason is by doing sth(having multiple trails, each of sth(which give me a different outcome), I can then look
+at how different (the outcomes of the different trials) are and get a measure of variance.
+
+>>> If I do 10 trails and get 10 wildly different answers, then I probably shouldn't believe any one of those answers,
+and I probably shouldn't even think I can average those answers and believe the mean is a real answer because if run
+an 11th trial maybe I'll get something totally different yet again.
+
+** “Yet again” has a similar meaning to “once again”. You would say it when something that happens regularly happens.
+
+>> we can formalize this notion of variance in a way that should be familiar to many of you.
+
+the concept of Standard deviation - the fraction of vales close to mean
+
+σ(x) = sqrt(1/abs(x)*Σ(x∈X)*(x-μ)^2), μ = mean
+
+# We can say the standard deviation of x, where x is a set of trails, is equal to the square root of 1 over the
+absolute value of (the length of x) the number of trails times the summation of the value of each trial, little x and
+big X, of x minus μ(mu) squared, where μ(mu) is the mean.
+
+>> sigma is usually used to talk about that.
+>> As I said, that's the {cardinality[ˌkärdəˈnalədē]基数: the number of elements in a set or other grouping, as a
+property of that grouping.}of x
+
+Those of you (are majoring in math) are going to love that.
+
+>> But for those of you who are more computationally(adv.) oriented. --> academically oriented.
+I recommend you just take a look at teh code.
+
+Now we know what standard deviation means. What are we going to do with it?
+We're going to use it to look at the relationship between the number of samples (we've looked
+at) and how much confidence we should have in the answer.

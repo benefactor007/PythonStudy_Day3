@@ -1,0 +1,366 @@
+# coding=utf-8
+
+>> it is kind of what you'd expect.
+>> ...(Compound interest) is a nice formula.
+>> ... refuse to do sth if ... looks like sth (Pronoun) .
+
+Pronouns are words that we use in place of Nouns (or other Pronouns) in a sentence
+to make it less repetitive and less awkward.
+
+>> There is no ...(point: singular noun) in ever (in any way), producing a graph that does not have
+a title and labeled axes.
+>> It's easy enough to do.
+>> ... that gives sb(me) a much more useful sth(graph).
+>> Nothing magical here, it's just a reminder that ...(you really need to do these things(plural noun))
+>> ...(You'll noticed here I've) not only do(told sb that this is the years of compounding and that this
+is the principal) but ...(I've measured it in dollars)
+>> I should have been (present perfect continuous) even ( more explicit(adj.) and said
+>> One of the things I did want to point out is ....(you saw the two of these various icons that will
+let you do things like zoom in on a graph and savve a graph)
+
+present perfect continuous: is used to denote that something which had begun in the past is still continued.
+
+Plural [ˈplo͝orəl]:
+
+You can actually get rich applying it.
+I usually refuse to look at it if it looks like this.
+It's a floppy disk, in case you've never seen one. I brought a floppy disk to show you.
+floppy disks: These were invented in 1971 by IBM
+>> sth be invented in year(1971) by sb(IBM)
+>> They were originally 8 inches in diameter and held all of kilobytes of data.
+
+pioneer [ˌpīəˈnir]: a person who is among the first to explore or settle a new country or area.
+>> Eventually, Apple and others pioneered a non-floppy floppy disk, that was in the '80s.
+>> ...(USB) that holds roughly 400,000 times more data than this floppy.
+>> It's just quite incredible how things have gone along. {事情的进展真是令人难以置信。}
+... want to return to what will be the main theme[THēm] for, as I said, a couple weeks which is
+randomness.
+>> And in order to talk about ...(randomness) we have to talk about ...(probability)
+
+deteriorated[dəˈtirēəˌrāt]: become progressively(steadily[ˈstedəlē]) worse.
+>> your mind kind of deteriorated a little bit over spring break, and your head isn't quite into things.
+And so, I'm just going to back up a tiny bit and start over to get our heads into it, and then fairly
+quickly move on to new things.
+
+>> sb(I) forgot that I needed to do(begin) by doing(gathering) chalk(CHôk).
+
+*** Probabilities can never be more than 1 as we'll see.
+
+>> let's now try and think of the right way to look at this question.
+
+Q: How many possible 10-digit numbers are there?
+A: 6^10 (6 to the 10th)
+
+Q: What's the odds[ädz] of not getting 1 the first or the second time?
+A: 5/6 * 5/6 (5 over 6 times 5 over 6) because these are independent events.(that's a key notion here)
+
+notion: a conception of or belief about something.
+
+>> I'm assuming that whether I get a 1 on the second roll is independent of whether I got a 1 on the first
+roll.
+
+dice die: throwing the dice
+et cetera[et ˈsedərə]
+
+The probability of not getting a 1 in 10 rolls : (5/6)^10 ((5 over 6) to the 10th)
+
+>> That make sense?
+>> If not, speak up, because things are going to get more complicated quickly.
+
+Q: Are you all with me on that?
+
+>> It was good effort.
+
+** If you want to get something where everything is covered, the probabilities always have to sum to 1.
+There are only two possibilities here, one possibility is I don't get any 1's. One possibility is I get
+at least one 1.
+
+If I take all of the possibilities, and I subtract the possibilities of not getting any 1's, the result
+must be the probability of getting at least one 1.
+
+>> This is a very common trick in sth(computing probabilities).
+
+Q: What's the probability of x ?
+A: The simplest way to compute it, is to compute the probability of not x and subtract it from 1.
+
+>> heading down a wrong track for this, one might have said, .....
+
+>> we know that can't be true. Because a probability always has to be less than or equal to 1.
+This is a good trick to keep in mind, whenever you've given a probability problem, try and figure out
+whether you have a good way to compute it directly, or whether it's simpler to compute the not of the
+probability, and then subtract it from 1.
+
+Probability is really fun field. It's interesting, it's history, it's intimately[ˈin(t)əmətlē] connected
+with the history of gambling.
+
+>> People of ...., all famous names you've heard, were motivated by desire to understand games of chance.
+
+>> The date at least, {archaeologically[ˌärkēəˈläjək(ə)l]:the study of human history and prehistory through the
+excavation[ˌekskəˈvāSH(ə)n] of sites and the analysis of artifacts and other physical remains.}, to about
+600 BC, where a pair of dice was found in Egyptian tombs.
+
+millennium [məˈlenēəm]: a period[ˈpirēəd] of a thousand years. plural millennia [məˈlenēə]
+>> Two millennia before the birth of Christ, people found dice in Egyptian tombs.
+
+-> Add on 12/14/2021
+
+Q: Is it profitable to do sth(to bet that given 24 rolls of a pair of fair dice, you would roll a double 6?
+
+profitable: (of a business or activity) yielding profit or financial gain.
+{Yield[yēld]: 1. produce or provide (a natural, agricultural[ˌaɡrəˈkəlCH(ə)rəl], or industrial product).
+2.give way to arguments, demands, or pressure.}
+
+Situation: He (actually) had a friend (who was in the business of gambling), making these bets[bet].
+
+>> Double 6, what we call today "box cars", in those days they just called two 6's.
+>> This was considered a (really) hard problem (in the mid-17th century).
+>> In fact, Pascal and Fermat, (two pretty smart guys) as it happens, debated[dəˈbāt] this.
+They exchanged sth(letter) with each other doing sth(trying to figure out)(how to solve this problem.)
+>> It shows sth.(how math has advanced), because, in fact, today, it's quite an easy problem.
+
+Q: What's the probability of not getting it 24 times(not getting a double 6) in a row?
+A: (35/36)^24, which is approximately[əˈpräksəmətlē] equal to 0.51.
+
+There is a slight edge in betting that you will not get a double 6 in 24 times.
+
+>> As old as dice is, people have built cheater's dice.
+The excavation of Pompeii, for example, they discovered a pair of loaded dice, dice with a little weight in it so
+one number would come up more often that it should.
+
+Quote: "Are you on unusually unlucky when it comes to rolling dice?"
+
+>> for {amusement: noun. the state or experience of finding something funny.} only.
+>> As much as I do sth(trust probability theory), I don't trust my ability to use it.
+>> And so what I did is wrote a little simulation to see if sb(Pascal) was right (when he did this).
+
+-> Add on 2021/12/16
+
+>> As we deal with sth(probability), we'll be doing sth(dealing a lot with the notion of simulation).
+>> Let sth(it) rip[rip]. : to start something up. Often used as an {imperative[əmˈperədiv]:of vital[ˈvīdl] importance
+; crucial.}
+
+That's the, well, to 17 digits of precision, the exact answer.
+
+>> came up with: to bring forth, discover, or produce.
+And you can see we came up with something close to that. Not exactly that, and we wouldn't expect to.
+
+Q: how do we know how many trials to run?
+
+>> The interesting thing is ...(I'm sure it took me less time to write this program than it took Pascal
+to solve the problem.)
+>> took sb less time to do sth than to do others.
+The truth is, I have several hundred years of people's work to build on.
+** several hundred years.
+
+Q: Is it easier sometimes to do sth(write a simulation), than ...(it is to do the probabilities?)
+A: What I often do in practice is both.
+
+>> I'll scratch[skraCH] my head and figure out how to figure out(come up with) the answer {analytically:
+adv. using analysis or logical reasoning.}. and then if it's easy, I'll write some code to simulate the problem
+, and expect to get roughly the same answer, giving me confidence I've done it correctly.
+>> On the other hand, if I've done the simulation and it had come up with something totally {bogus[ˈbōɡəs]: fake}.
+or totally fake, then I would have had to work hard to figure out which was right, the code or the math.
+** would have + had: situations that did not happen - an unreal, past situation.
+
+intuition[ˌint(y)o͞oˈiSH(ə)n]: the ability to understand something immediately, without the need for
+conscious[ˈkän(t)SHəs] reasoning.
+
+** This kind of simulation that (I've just done for the dice game) is what's called a "Monte Carlo simulation"
+
+>> It is the most popular kind of simulation named after a Casino on the Riviera, in the small {principality
+[ˌprinsəˈpalədē]: a state ruled by prince} of Monaco.
+
+>> This was back in the time... (to described as the past time)
+>> when it was hard to find a place you could gamble, and this happened to be one of the places [plural]
+you could.
+
+** coined: to invent a new word or expression
+The term was coined in 1949 by Stanislaw Ulam and Nicholas Metropolis, (two very well-known mathematicians)
+Ulam, who later become famous for designing the hydrogen[ˈhīdrəjən] bomb with Teller, invented the method in
+1946, and I'm going to quote from his description of how he invented it.
+
+>> "The first thoughts and attempts I made to practice the Monte Carlo method, were suggested by a question
+which occurred to me in 1946, as I was {convalescing[ˌkänvəˈles]: recover one's health or strength over a
+period of time after an illness or operation"} from an illness and playing {solitaires[ˈsäləˌter]: any of various
+card games played by one person}
+
+>> "The question was, what are the chances that a canfield solitaire laid out with 52 cards will come out
+successfully? After spending a lot of time doing sth(trying to estimate them )by pure combinatorial[ˌkämb(ə)nəˈtôrēəl]"
+calculations I wondered whether a more practical method than (quote) 'abstract{existing in thought} think' (end quote),
+might not be to lay it out, say 100 times, and simply observe and count the number of successful plays."
+
+envision[ənˈviZHən]: verb. imagine as a future possibility; visualize.
+
+>> This was already possible to do(envision) with sth(the beginning of the new area of fast computers.
+And I immediately thought of problems, as you would, immediately thought of problems of neutron {diffusion
+[dəˈfyo͞oZHən]: the spreading of sth move widely} and other questions of mathematical physics.
+And more generally, how to change processes described by certain differential equations into an equivalent
+[əˈkwiv(ə)lənt] form interpretable[inˈtərprət] as a succession of random operations.
+
+interpret[inˈtərprət]: verb. explain the meaning of (information, words, or actions).
+
+succession[səkˈseSHən]:the action or process of inheriting a title, office, property, etc.;
+the new king was already {elderly[ˈeldərlē]:(of a person) old or aging.} at the time of his succession.
+
+>> As early as 1946 (the year), people were thinking about the question of moving away from solving systems
+of equations to using randomized techniques to simulate things and try to find out what the actual answer
+was that way.
+
+** "Fast" is a relative term.
+Ulam was probably doing(referring) to the ENIAC computer, which could perform about 10 to the 3 additions
+a second.(1000 operations a second), and weighted approximately 25 tons. Now today's computers, by comparison,
+perform 10 to the 9th additions and weight about 10 to the minus 3 tons.
+
+>> This technique was used (during the Manhattan Project) to predict what would happen doing (during nuclear
+fission and worked.)
+
+fission[ˈfiSHən]: the action of dividing or splitting something into two or more parts.
+
+>> (Monte Carlo simulations) are an example of what's called "inferential statistics"
+
+** inferential [ˌinfəˈren(t)SH(ə)l]: 推论
+
+Inferential statistics is based upon one guiding principle. And that principle is that a random sample
+tends to {exhibit[iɡˈzibət]: manifest[ˈmanəˌfest]: clear or obvious to the eye or mind.} the same properties
+as the population from which it is drawn.
+
+>> explain to the above, if I try and sample people for predicting an election, the notion is if I go and I
+asked a 1,000 people at random in Massachusetts who they're going to vote for, the average will be about the same
+as if I looked at the whole population.
+
+>> whenever we use a statistical method like this,
+Q: is those 100,000 times I threw the pair of dice, that would be representative of all possible throws of the
+dice, the infinite number of possible throws?
+A: Yes, due to show upon the inferential statistics.
+
+>> One always has to ask the question ...(whether this is true or whether one has a sampling technique that is,
+for example, giving you a biased sample.
+
+** biased [ˈbīəst]: unfairly {prejudiced}[ˈprejədəst]: having or showing a dislike or distrust that is derived[dəˈrīv]
+from prejudice}  for or against someone or something.
+
+Little later in the term, we'll talk about many ways in which you can get fooled here and think you're doing a
+fair statistical analysis, and get all the math right, and still come up with the wrong answer because this
+assumption doesn't actually hold.
+
+Now in term of coins, a little sample than dice, where (you can flip a coin and you get either a head or a tail).
+
+Q: Would you feel good inferring from that the next time he flipped a coin it would also come up heads?
+
+>> I would infer that the coin was two-headed.
+>> Your common sense tells sb sth.
+
+>> This is technically called comparing something to the null hypothesis[ hīˈpäTHəsəs].
+null hypothesis: (in a statistical test) the hypothesis that there is no significant difference between specified
+populations, any observed difference being due to sampling or experimental error.
+The null hypothesis is what you would get with a random event.
+
+
+** This is an example of what's called "the law of large numbers", also known as Bernoulli's Law, after one of
+the Bernoulli family of mathematicians, and I can't, for the life of me, remember which Bernoulli.
+
+>> There are a whole bunch of them.
+
+underlie: be a significant cause or basis of (something) even if not necessarily manifest or obvious.
+
+**Anyway the law states, and it's important to understand this because again it underlies the inferential
+statistics, that in repeated independent teats, and it's important to note the word "independent", each test
+has to be independent of the earlier test.
+
+e.g. In this case, the tests are filps of the coin with the same actual probability we'll call it p, often used
+to represent probability, of an outcome for each test, the chance that the fraction of times outcome occurs
+{converges[kənˈvərj]: (of lines) tend to meet at a point.} to P as number of trails goes to infinity.
+
+
+>> It's worth noting that this law does not imply[imˈplī] that if start out with deviations from the expected
+behaviors, those deviations are likely to be quote "evened out" by opposite[ˈäpəzət] deviations in the future.
+
+So if I happen to start by getting a whole bunch of heads in a row, it does not mean that I'm more likely to get
+tails in a {subsequent[ˈsəbsəkwənt]: coming after something in time; following.} trail.
+
+>> Because if that were true, then they wouldn't be independent.
+** Independent means memoryless
+
+*** If I have an independent process, what happens in the future cannot be affected by the past.
+And therefore, I don't get this business of "they even out".
+
+even out: to become equal, or to make something equal:
+
+>> Now people refuse to believe this.
+If you go to any gambling place you'll discover that if people threw the roulette[ro͞oˈlet] wheel[(h)wēl], if
+black comes up 20 times in a row, they'll be a rush bet on read. "Red is do"
+
+Every psychologist (who has ever done this experiment) finds that people don't believe it. That it's not true.
+
+has ever done :
+
+>> It happens so often it's got a name called "the gambler's {fallacy[ˈfaləsē]:a mistaken belief}"
+There's(There have) been great examples of people going broke doing this.
+
+Add on Thursday evening, Dec. 16.
+
+"the law of large numbers "
+>> It doesn't say anything at all about that. It says the ratio of head to tails will approach 1, but
+not the difference between them
+>> Let's look at an example showing that off.
+
+exponent[ikˈspōnənt]: MATHEMATICS, a quantity representing the power to which a given number or expression
+                      is to be raised.
+
+Add on the morning, Dec. 17, 2021.
+
+Power of 2: the result of exponentiation with number two as the base and integer n as the exponent.
+
+You'll notice that it appears (that maybe I'm biasing a little bit), because I'm giving 0.5 a value.
+But there are so many floating point numbers between 0 and 1. That the probability of getting exactly 0.5 is
+so small that I can ignore it.
+
+>> we also saw something where it went up a little bit then it went down and then shot up dramatically at the end,
+which was (why (that scale is so funny))
+
+>> if we look at the ratio, what we see is it seems to converge towards 1.
+
+{trend[trend]: a general direction in which something is developing or changing.
+
+>> mislead sb into doing sth
+*** People pot a small number of points, connect them by a line, and mislead the audience into thinking there's a trend.
+when, in fact, maybe all you have is an outlier.
+
+>> It is {problematical:involving or constituting a problem.} (here) to do it that way.
+
+{constitute[ˈkänstəˌt(y)o͞ot]: be (a part) of a whole.}
+
+>> what I'm going to do is change it in two ways.
+>> what we see is it's pretty {sparse[spärs]:thinly dispersed or scattered[ˈskadərd].}
+scattered[ˈskadərd]:occurring or found at intervals or various locations rather than all together.
+interval:an intervening time or space. (after his departure, there was an interval of many years without any meetings)
+
+Because way out here (I'm only connecting two points), giving an illusion that there is a
+trend but, in fact, no reason to believe it.
+
+>> we can't see much of what's going on over here
+
+logarithmic[ˌlôɡəˈriT͟Hmik]
+
+>> There is no need to make it logarithmic
+>> we can see things much more clearly, so log scales can be enormously[əˈnôrməslē] useful.
+
+>> everyone uses(third person present) them a lot
+>> It is very important to observe the fact that it's logarithmic and not get fooled.
+
+** Linear scaling
+** Logarithmic scaling
+
+>> we now have charts where I can, perhaps, actually reach some conclusion about what's going on.
+
+Q: how certain can I be? Can I really be certain that, indeed, this should be converging to 1?
+
+A: ** You can never get absolute certainly from sampling because you could never be sure if you
+haven't been vastly lucky or unlucky.
+
+>> That's not to say you can't get the absolute correct answer. I can't know that that's the correct answer.
+>> The question I want to {pursue[pərˈso͞o]:ollow (someone or something) in order to catch or attack them.}, and it's
+what we'll cover on ..., is what techniques can I use to make a statement of the form.
+
+>> make a statement of the form, which I'm certain within the following range that I have the right answer.
+>> That I know the right answer is highly likely to be this close to the answer (what) my simulation is giving me.
