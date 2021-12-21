@@ -42,3 +42,143 @@ I recommend you just take a look at teh code.
 Now we know what standard deviation means. What are we going to do with it?
 We're going to use it to look at the relationship between the number of samples (we've looked
 at) and how much confidence we should have in the answer.
+
+Add on Tuesday afternoon, Dec,21.
+
+Figure(3)
+>> We expect the ratio to get smaller, but we expected the mean difference to get bigger.
+
+** What I have to ask is not is the standard deviation large or small, but is it a relatively large or
+a relatively small.
+** Relative to the mean.
+e.g. If the mean is a million, and the standard deviation is 20. It's a relatively small standard deviation.
+
+>> It's pretty packed around the mean.
+{packed: (of a room, building, or other place) filled by a large number of people; very crowded.}
+
+>> The good news is we have again, a mathematical for formula that lets us do that.
+>> Get rid of all those figures for the moment.
+
+** The formula is called the coefficient of variation.
+
+coefficient [ˌkōəˈfiSHənt]: a numerical or constant quantity placed before and multiplying the variable in
+an algebraic[ˌaljəˈbrāik] expression (e.g. 4 in 4x y).
+
+algebra: 代数学
+
+
+>> For reasons I don't fully understand, this is typically not used.
+People always talk about the standard deviation. But in many cases, it's the coefficient of variation that
+really is a more useful measure.
+
+** It's simply the standard deviation divided by the mean.
+
+{Vary[ˈverē]: differ in size, amount, degree, or nature from something else of the same general class.}
+
+How much they vary relative to each other.
+
+** If < 1, that as low variance.
+*** There should be some warnings that come with the coefficient of variance. And there are some of the
+reasons people don't use it as often because they don't want to bother giving the warning labels.
+*** If the mean is near 0, small changes in the mean are going to lead to large changes in the coefficient
+of variance. They're not necessarily very meaningful.
+
+
+"(With) a grain[ɡrān] of salt", (or "a pinch of salt") is an idiom of the English language, which means to
+view something with scepticism or not to interpret something literally.
+
+pinch[pin(t)SH]: grip[ɡrip] (something, typically someone's flesh) tightly and sharply between finger and thumb.
+grain[ɡrān]
+scepticism[ˈskeptəˌsizəm]: a skeptical attitude; doubt as to the truth of something.
+skeptical[ˈskeptək(ə)l]: not easily convinced; having doubts or reservations.
+
+>> You're dividing by something near 0, a small change is going to produce something big.
+
+Perhaps more importantly, or equally importantly and this is something we're going to talk about later
+is that unlike the standard deviation,
+** the coefficient of variation cannot be used to construct confidence {intervals[ˈin(t)ərvəl]: a space between two
+things; a gap }.
+
+>> I know we haven't talked about confidence intervals yes, but we will shortly.
+
+tremendously[trəˈmendəslē]: to a very great extent.
+
+>> You've got to be tremendously bored with flipping coins.
+Nevertheless, I'm going to ask sb(you) to do(look at) sth (one more coin flipping simulation.)
+And then I promise we'll change the topic.
+
+>> This is to show you some more aspects of the plotting facilities in PyLab.
+
+>> You've(You have) seen this zillion times.
+
+>> use fairly frequently.
+>> Some other things I want to show you here is I'm using xlim and ylim
+What we could do here is this is setting the limits of the x and y-axis, rather than using defaults.
+
+Q: How to lie with data?
+A: (A great way to fool people with figure) is to {subtly[ˈsəd(ə)lē]:in a clever and indirect way, in order to achieve
+something.} change the range of one of the axes.
+
+>> When in fact, neither conclusion is ture.
+It's just that they've(they have) been normalized to either look the same or look different.
+
+"Let's run it and see what we get"
+
+>> Much easier to prepare than actual material, but nevertheless, shouldn't take forever.
+>> I should probably be testing all these things out on the slow computer before making you wait.
+
+>> Let's look at the two figures side by side.
+
+squeeze[skwēz]: firmly press (something soft or yielding), typically with one's fingers.
+
+>> make them a little smaller(adj.) so we can squeeze them both in.
+
+Q: What have we got here?
+
+>> It says, as we've discussed, that these results(plural)(1,000 flips) are more credible than
+these results (100 flips).
+Not to day that they're more accurate because they're not really, but they're more believable.
+Notice also the spread of outcomes is much tighter here
+
+tight[tīt]: fixed, fastened, or closed firmly; hard to move, undo, or open.
+** That's why I played with xlim. If I used the default values, it would not have looked much tighter
+when I put this up on the screen because it would have said well, we don't have any values out here.
+I don't need to display all of this(singular).
+It would have then about the same visual width[widTH] as this.
+>> And therefore, potentially very deceptive when you just stared at it if you didn't look carefully at the
+units on the x-axis
+
+deceptive[dəˈseptiv]: giving an appearance or impression different from the true one; misleading.
+
+stare[ster]: look fixedly or {vacantly[ˈvākənt]: empty} at someone or something with one's eyes wide open.
+
+>> (what I did) is since I knew I wanted to show you these things side by side and make the point about
+how tight the distribution is, I made both axes run the same length.
+
+** to produce comparable figures.
+>> to put the text box in a place where it would be easy to see.
+>> You can also use the fault of best, which often puts it in the right place, but not always.
+
+** The distribution of the results in both cases is close to something called the normal distribution.
+
+>> We are talking about not just the average value but the distribution of values in these trials.
+
+which is very common.
+
+** The normal distribution, which is very common, has some interesting properties.
+*** It always peaks at the mean and falls off symmetrically.
+
+symmetrical[səˈmetrik(ə)l]: made up of exactly similar parts facing each other or around an axis; showing symmetry.
+symmetry[ˈsimətrē]: noun.
+
+The shape of the normal distribution.
+There are people who imagine it looks like a bell. And Therefore, the normal distribution is often also called
+the bell curve.
+
+>> And indeed, mathematicians[ˌmaTH(ə)məˈtiSHən] will always call it this.
+This is often what people use in the non-technical literature.
+>> There was, for example, a very controversial book called "The Bell Curve", which I don't recommend doing(reading.)
+
+controversial[ˌkäntrəˈvərSHəl]: giving rise or likely to give rise to public disagreement.
+
+It's not really exactly symmetric.

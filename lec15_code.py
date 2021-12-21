@@ -19,7 +19,7 @@ def stdDev(X: list) -> float:
     return (tot / len(X)) ** 0.5  # sqrt(1/abs(x)*Σ(x∈X)*(x-μ)^2))
 
 
-def flipPolt(minExp, maxExp, numTrails):  # Exp = exponent
+def flipPolt(minExp, maxExp, numTrials):  # Exp = exponent
     meanRatios = []
     meanDiffs = []
     ratiosDs = []
@@ -30,7 +30,7 @@ def flipPolt(minExp, maxExp, numTrails):  # Exp = exponent
     for numFlips in xAxis:
         ratios = []
         diffs = []
-        for t in range(numTrails):
+        for t in range(numTrials):
             numHeads = 0
             for n in range(numFlips):  # to get the number of Heads
                 if random.random() < 0.5:
@@ -42,42 +42,104 @@ def flipPolt(minExp, maxExp, numTrails):  # Exp = exponent
                 print("WARNING: The fraction is zero")
                 ratios.append(float('inf'))
             diffs.append(abs(numHeads - numTails))
-        meanRatios.append(sum(ratios) / numTrails)
-        meanDiffs.append(sum(diffs) / numTrails)
+        meanRatios.append(sum(ratios) / numTrials)
+        meanDiffs.append(sum(diffs) / numTrials)
         ratiosDs.append(stdDev(ratios))
         diffsDs.append(stdDev(diffs))
     # Let's do a bunch of plotting.
     pylab.plot(xAxis, meanRatios, 'bo')
-    pylab.title("Mean Heads/Tails Ratios ( " + str(numTrails) + " Trails)")
+    pylab.title("Mean Heads/Tails Ratios ( " + str(numTrials) + " Trials)")
     pylab.xlabel("Number of Flips")
-    pylab.ylabel("Mean Heads/Trails")
+    pylab.ylabel("Mean Heads/Trials")
     pylab.semilogx()
     pylab.figure()
-    pylab.plot(xAxis,ratiosDs, 'bo')
-    pylab.title("SD Heads/Tails Ratios ( " + str(numTrails) + " Trails)")
+    pylab.plot(xAxis, ratiosDs, 'bo')
+    pylab.title("SD Heads/Tails Ratios ( " + str(numTrials) + " Trials)")
     pylab.xlabel("Number of Flips")
     pylab.ylabel("Standard Deviation")
     pylab.semilogx()
     pylab.semilogy()
     pylab.figure()
     pylab.plot(xAxis, meanDiffs, 'bo')
-    pylab.title("Mean abs(#Heads - #Tails) ( " + str(numTrails) + " Trails)")
+    pylab.title("Mean abs(#Heads - #Tails) ( " + str(numTrials) + " Trials)")
     pylab.xlabel("Number of Flips")
     pylab.ylabel("Mean abs(#Heads - #Tails)")
     pylab.semilogx()
     pylab.semilogy()
     pylab.figure()
     pylab.plot(xAxis, diffsDs, 'bo')
-    pylab.title("SD abs(#Heads - #Tails) ( " + str(numTrails) + " Trails)")
+    pylab.title("SD abs(#Heads - #Tails) ( " + str(numTrials) + " Trials)")
     pylab.xlabel("Number of Flips")
     pylab.ylabel("Standard Deviation")
     pylab.semilogx()
     pylab.semilogy()
 
 
+def flip(numFlips):
+    heads = 0.0
+    for i in range(numFlips):
+        if random.random() < 0.5:
+            heads += 1.0
+    return heads / numFlips
+
+
+def flipSim(numFlipsPerTrial, numTrials):
+    fracHeads = []
+    for i in range(numTrials):
+        fracHeads.append(flip(numFlipsPerTrial))
+    return fracHeads
+
+
+def labelPlot(nf, nt, mean, sd):
+    """nf: numFlips
+        nt: numTrial"""
+    pylab.title(str(nt) + ' trials of ' + str(nf) + ' flips each')
+    pylab.xlabel('Fraction of Heads')
+    pylab.ylabel('Number OF Trials')
+    xmin, xmax = pylab.xlim()
+    ymin, ymax = pylab.ylim()
+    pylab.text(xmin + (xmax - xmin) * 0.02, (ymax - ymin) / 2,
+               'Mean = ' + str(round(mean, 6)) + '\nSD = ' + str(round(sd, 6)))
+    # pylab.text(pos. on x-axis, pos. on y-axis, text_info)
+    # round( x , n)    x -- 数值表达式。
+    # n -- 数值表达式，表示从小数点位数。
+
+
+def makePlots(nf1, nf2, nt):
+    """ nt =  number of trials per experiment
+        nf1 = number of flips 1st experiment
+        nf2 = number of flips 2nd experiment"""
+    fracHeads1 = flipSim(nf1, nt)
+    mean1 = sum(fracHeads1) / float(len(fracHeads1))
+    sd1 = stdDev(fracHeads1)
+    pylab.hist(fracHeads1, bins=20)  # Plot a histogram
+    xmin, xmax = pylab.xlim()  # I stored the minimum x values and the maximum x value to the current one
+    # if you call xlim with no arguments, what it will return (is the minimum x value \
+    # value and the minimum y value of the current plot, the current figure.
+    ymin, ymax = pylab.ylim()
+    labelPlot(nf1, nt, mean1, sd1)
+    pylab.figure()  # to plot the figure
+    fracHeads2 = flipSim(nf2, nt)
+    mean2 = sum(fracHeads2) / float(len(fracHeads2))
+    sd2 = stdDev(fracHeads2)
+    pylab.hist(fracHeads2, bins=20)
+    pylab.hist(fracHeads2, bins=20)
+    pylab.xlim(xmin, xmax)
+    # set the xlmit to the previous ones that I saved from the previous figure.
+    # Q: Why am I doing that?
+    # A: Because I want to be able to compare the two figures.
+    ymin, ymax = pylab.ylim()
+    labelPlot(nf2, nt, mean2, sd2)
+
+
 def main():
-    flipPolt(4,20,20)
+    # flipPolt(4,20,20)
+    # pylab.show()
+    # L = [1, 2, 3, 3, 3, 4]
+    # pylab.hist(L, bins=6)
+    makePlots(100, 1000, 100000)
     pylab.show()
+
 
 if __name__ == '__main__':
     main()
