@@ -182,3 +182,110 @@ This is often what people use in the non-technical literature.
 controversial[ˌkäntrəˈvərSHəl]: giving rise or likely to give rise to public disagreement.
 
 It's not really exactly symmetric.
+
+Add on Wednesday, Dec. 22
+>> If I did 100,000 trials of a 100,000 flips each, we wouldn't finish the lecture.
+I'd take too long.
+
+
+** Normal distribution are frequently used in constructing probabilistic[ˌpräbəbəˈlistik] models for two reasons.
+*** 1) Reason one, is they have nice mathematical properties. They're easy to reason about for
+    reasons we'll see shortly.
+>> The curve (where every value is the same) has even nicer mathematical properties but isn't very useful.
+*** 2) Many naturally occurring instances.
+
+reason: verb. think, understand, and form judgments by a process of logic.
+e.g. humans do not reason entirely the facts.
+
+>>> That's not good enough.
+>> Let's first look at what makes them nice mathematically and then let's look at where they occur.
+They can be completely characterized[ˈkerəktəˌrīz] by two parameters, the mean and the standard deviation.
+
+>> Knowing these is the equivalent to (is similar to) knowing the entire distribution.
+Furthermore, if we have a normal distribution, the mean and the standard deviation can be used to compute confidence
+intervals.
+
+This is a very important concept.
+
+>> One that you see all the time in the popular press but maybe don't know what it actually means when you see it.
+So instead of estimating an unknown parameter, all we've been doing with this whole probability business.
+>> You get some unknown parameter like the probability of getting a head or a tail, and we've been
+estimating it using the various techniques.
+
+>> Typically, you've been estimating it by a single value, the mean of a set of trials.
+
+*** A confidence interval instead allows us to estimate the unknown parameter by providing a range that is likely to
+contain the unknown value.
+
+>> ... lie within ...(that range)
+
+*** A confidence that the unknown value lies within that range. It's called the confidence level.
+
+e.g. when you look at political[pəˈlidək(ə)] polls[pōl], you might see something that would say he candidate is likely
+to get 52% of the vote plus or minus 4%(52% +- 4%)
+
+Q: What does that mean?
+A: If somebody doesn't specify the confidence level, they usually mean 5%.
+>> So what this says is that 95% percent of the time, 95th confidence interval. If the election were actually conducted,
+the candidate[ˈkandiˌdāt] would get somewhere between 48% to 56% of the vote.
+
+So 95% percent of the time, 95% percent of the elections, the candidate would get between 48% and 56% of the votes.
+>> We have two things, the range and our confidence that the value will lie within that range.
+
+They are assuming that elections are random trails that have a normal distribution.
+That's an implicit assumption in the calculation that tells us this.
+
+** /ē/ : ee
+e.g.  ee as in green; ea as in beach; e-e as in athlete[ˈaTHˌlēt]; y as in happy
+implicit[imˈplisit]: implied though not plainly expressed.
+plainly[ˈplānlē]: able to be perceived easily.
+perceive[pərˈsēv]: become aware or conscious of (something); come to realize or understand.
+
+
+poll: the process of voting in an election.
+political: relating to the government or the public affairs[əˈfer] of a country.
+affair[əˈfer]: an event or sequence of events of a specified kind or that has previously been referred to.
+be conducted[kənˈdəktəd]: the action or manner of managing an activity or organization.
+candidate: a person who applies for a job or is nominated for election.
+
+>> instead do sth (instead allow sb to do sth)
+
+popular press: Popular press sources are magazines, newspapers, and books intended to inform or entertain general
+audiences.
+
+** There is something called the empirical[əmˈpirik(ə)l] rule, which is used for normal distributions.
+
+empirical[əmˈpirik(ə)l]: based on, concerned with, or verifiable by observation or experience rather than theory or pure
+ logic.
+
+Empirical rule: They give us a handy way to estimate confidence intervals given the mean and the standard deviation.
+e.g. If we have a true normal distribution, then roughly[ˈrəflē] speaking, 68%(not exactly) of the data are within the
+one standard deviation of the mean. 95%(not exactly) percent with two standard deviations, and almost all, 99.7% will
+fall within three(.
+
+>> These values are approximations.[əˌpräksəˈmāSH(ə)n], and they're not exactly right.
+In fact, they're good enough for government work.
+
+>> This is what people use when they think about these things.
+>> sth(this) may raise an interesting question in your mind.
+
+Q: How do the pollsters go about finding the standard deviation?
+Q2: Do they go out and conduct a 100 separate polls and then do some math.
+
+>> sort of (kind of) what we've been doing.
+>> You might hope so, but that is not (what they do) because it's expensive.
+>> Nobody wants(Third-Person Singular Verb) to do that.
+They use another trick to estimate the standard deviation. Now, you're beginning to understand why these polls aren't
+always right.
+
+** The trick they use for that is something called the standard error, which is an estimate of the standard deviation.
+You can only do this under the assumption that the errors are normally distributed and also that the sample population
+is small(It's small relative to the actual population).
+
+>> This gets sb(us) to one of the things we like about the normal distribution that in fact, it's often an accurate
+model of reality. When people have done polls over and over again, they do discover that, indeed, the results are
+typically normally distributed. So this is not a bad assumption
+
+>> ... can only do...
+>> roughly speaking
+handy[ˈhandē]: convenient[adj.] to handle or use; useful.
