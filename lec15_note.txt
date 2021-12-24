@@ -254,7 +254,7 @@ popular press: Popular press sources are magazines, newspapers, and books intend
 audiences.
 
 ** There is something called the empirical[əmˈpirik(ə)l] rule, which is used for normal distributions.
-
+darn close
 empirical[əmˈpirik(ə)l]: based on, concerned with, or verifiable by observation or experience rather than theory or pure
  logic.
 
@@ -289,3 +289,158 @@ typically normally distributed. So this is not a bad assumption
 >> ... can only do...
 >> roughly speaking
 handy[ˈhandē]: convenient[adj.] to handle or use; useful.
+
+Add on Thursday, Dec. 23
+
+>> if we heave p, which is equal to the percentage sample. And we have n, which is equal to the sample size.
+We can say that the standard error which I'll write SE(standard error), is equal to the formula,
+
+SE = (p * (100 - p)/n) ** 0.5
+** Warning: p = %. Have to format the p as percentage.
+P times (100 minus p) divided by n to the 1/2(one half)
+
+For example, a pollster were to sample 1,000 voters, and 46% of them said that they'll vote for sb.
+The standard error would be roughly 1.58%
+
+>> be within: inside (something).
+
+We would interpret this to mean that in 95% of the time, the true percentage of votes that sb would get is within
+two standard errors of 46%.
+
+>> I know that's a lot to swallow quickly.
+
+swallow[ˈswälō]: cause or allow (something, especially food or drink) to pass down the throat[THrōt].
+
+>> As always, we'll try and make sense of it by looking at some code.
+
+Add on Friday, Dec. 24
+
+By now, you've probably all figured out that I'm much more comfortable with code than I am with formulas.
+
+>> we're going to conduct a poll here.
+Not really, we're going to pretend we're conducting a poll.
+we'll start with no votes.
+
+>> Otherwise, it will stay where it was and will return the number of votes.
+Nothing very dramatic.
+>> let's see what we get when we do this.
+
+A Note on Notation
+Notation: a series or system of written symbols used to represent numbers, amounts, or elements in something such as
+music or mathematics.
+
+Some of the confusion surrounding this subject is due to the notation used. People sometimes call the standard deviation
+of a set of numbers the "population standard deviation", and write it as σ(n). (It is often called σn on calculators.
+The notation makes sense because, when finding the variance, we divide by n.) They then sometimes refer to the corrected
+quantity, √(n/(n-1)) times this, the estimate of the true population standard deviation if what we had was a sample,
+as the "sample standard deviation", and write it as σn-1. The σn-1 notation at least reminds us what we're doing, but
+calling it the sample standard deviation is potentially confusing, because it's not the standard deviation of the
+sample. Instead, it's an estimate of the population standard deviation if what we had was a sample.
+
+In more serious work, the true, unknown variance of the population is usually denoted σ2, and the actual variance of
+the sample is usually denoted s2. Thus what Bessel's correction tells us is that an unbiased estimator for σ2 is given
+by (n/(n-1))s2. I'll use this notation in subsequent sections. I'll also use μ for the true, unknown mean of the
+population, and x for the actual mean of the sample.
+
+
+>> Pretty darn close: really close
+e.g. Pretty darn[därn] close to a normal distribution.
+>> Kind of what we'd expect.
+The fraction of votes peaks at 46%, again what we'd expect.
+>> every once in while: sometimes but not often : from time to time : occasionally[əˈkāZH(ə)nəlē]
+But every once in while, it gets all the way out here to 50.
+Highly unlikely in our modern society.
+So it turns out that the standard error, which you'll remember we computed using that formula to be 1.58.
+
+remember the standard error is an attempt to just use a formula to estimate what the standard deviation is going to be.
+
+n = {int} 1000
+p = {float} 0.46
+se = ((46*(100-46))/n)**0.5
+se = {float} 1.57607
+** The unit of se is percentage.
+
+use this simple formula to guess what it would be.
+>> We then ran a simulation and actually measured the standard deviation, no longer a guess.
+And it came out to be 1.6
+
+I hope that most of you would agree that was pretty good guess.
+Therefore, if you will, the differences are normally distributed, the distribution is normal.
+>> It turns out the standard error is a very good approximation to the actual standard deviation.
+>>> That's what pollsters rely on and why polls are actually pretty good.
+
+Now the next time you read a poll, you'll understand the math behind it.
+In a subsequent lecture, we'll talk about some ways they go wrong that have nothing to do with getting the
+math wrong.
+
+be (of) no use: to not be useful
+tractable[ˈtraktəb(ə)l]: adj. (of a person) easy to control or influence.
+
+Finding a nice tractable mathematical model, the normal distribution, is of no use if it provides an inaccurate
+model of the data that you care about.
+
+Fortunately, many random variables have an approximately normal distribution.
+
+For example, I were doing a real lecture and I had 100 students in this room, and if I were to look at the
+heights of the students, we would find that they are roughly normally distributed.
+
+
+FORM
+***[If ... were to + verb ..., ...]
+
+USE
+Were to can be used in the present to emphasize that the conditional form is extremely unlikely or unthinkably horrible.
+Notice that this special form is only used in the if-clause[klôz].
+
+** do end up doing sth.
+
+Any time you take a population of people and you look at it, it's quite striking that you do end up doing(getting)
+a normal distribution of the heights.
+
+You gets a normal distribution of the weights[wāt].
+
+
+striking[ˈstrīkiNG]: adj. attracting attention by reason of being unusual, extreme, or prominent[ˈprämənənt].
+
+>> Same thing will be true if you look at plants, all sorts of things(plural) like that.
+
+As I known == What I do know
+
+>> What I do know is that and probably this is more important.
+>> Many experimental setups, and this is what we're going to be talking about going forward, have normally
+distributed measurement errors.
+
+This assumption was used first in the early 1800s (eighteen-hundreds) by the German mathematician[ˌmaTH(ə)məˈtiSHən]
+and physicist[ˈfizəsəst] Carl Gauss.
+
+You've probably heard of Gauss, who assumed a normal distribution of measurement errors in his analysis of
+astronomical[ˌastrəˈnämək(ə)l] data. He was measuring various things in the heavens. He knew his measurements of
+(where something was) were not 100% accurate. And he said, well,
+>> I'll bet it's equally likely (it's) to the left of where I think it is or the right as where I think it is.
+I'll bet the further I get from its true value, the less likely I am to guess that's where it is.
+
+He invented at that time what we now call the normal distribution.
+
+astronomical: relating to astronomy[əˈstränəmē].
+astronomy: the branch of science which deals with celestial[səˈlesCHəl] objects, space, and the physical universe as a
+whole.
+
+>> Physicists insist today still on calling it a Gaussian distibution.
+And it turned out to be a very accurate model of measurement errors he would make.
+
+e.g. If you guys are in a chemistry lab, or a physics lab, or a bio. lab, mechanical engineering lab, any lab
+where you're measuring things, it's pretty likely that the mistakes you will make will be normally distributed.
+
+unsystematic: adj. not done or acting according to a fixed plan or system; unmethodical[ˌənˌməˈTHädək(ə)l].
+sloppy[ˈsläpē]:careless and unsystematic; excessively casual.
+casual[ˈkaZHo͞oəl]: relaxed and unconcerned.
+
+>> It's not just because you were sloppy in the lab. Actually, if you were sloppy in the lab, they may not be
+normally distributed.
+
+If you're not sloppy in the lab, they'll be normally distributed.
+>> It's true of almost all measurements.
+In fact, most of science assumes normal distributions of measurement errors in reaching(getting) conclusions about
+the validity[vəˈlidədē] of their data.
+
+>> we'll see some examples of that as we go forward

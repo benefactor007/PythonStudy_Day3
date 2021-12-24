@@ -132,12 +132,46 @@ def makePlots(nf1, nf2, nt):
     labelPlot(nf2, nt, mean2, sd2)
 
 
+def poll(n,p):
+    """
+
+    :param n: total number of votes
+    :param p: probability for getting the vote.
+    :return: votes as received
+    """
+    votes = 0.0
+    for i in range(n):
+        if random.random() < p/100.0:
+            votes += 1
+    return votes
+
+def testErr(n = 1000, p =46.0, numTrials = 1000):
+    results  = []
+    for t in range(numTrials):
+        results.append(poll(n,p))
+    print("std = "+ str((stdDev(results)/n)*100) + '%')
+    #  People sometimes call the standard deviation
+    # of a set of numbers the "population standard deviation", and write it as σ(n)
+    # if we want to get the σ(sigma) which have to divide by n(Sample size)
+    # to format as % by using multiple one hundred(100) first.
+    results = pylab.array(results)/n
+    pylab.hist(results)
+    pylab.xlabel("Fraction of Votes")
+    pylab.ylabel("Number of Polls")
+
+
 def main():
     # flipPolt(4,20,20)
     # pylab.show()
+
     # L = [1, 2, 3, 3, 3, 4]
     # pylab.hist(L, bins=6)
-    makePlots(100, 1000, 100000)
+
+    # makePlots(100, 1000, 100000)
+    # pylab.show()
+
+    # testErr(n=10000,numTrials=10000)
+    testErr()
     pylab.show()
 
 
