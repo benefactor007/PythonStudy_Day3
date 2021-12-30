@@ -1,0 +1,175 @@
+# coding=uft-8
+
+>> sb ended up date(last Thursday's) lectures (talking about Gaussian distributions).
+
+As he said, one of the interesting things(plural) about a Gaussian is it can be fully characterized
+by its mean and its standard deviation.
+
+characterized[ˈkerəktəˌrīz]: describe the distinctive nature or features of.
+
+>>> sth of being able to
+>>> ... will continue to do as a very important way of doing sth
+>> And this concept of being able to take a curve and characterize it with a small number of parameters is something
+we'll continue to see as a very important way of looking at modeling physical systems.
+
+
+>> the part of the term that...
+And in fact, that is the part of the term that we've entered.
+It's a part of the term we'll spend a lot of time on it.
+
+>> The whole issue is, how we construct computational models that will help us understand the real world?
+
+When we can, we love to model distributions as Gaussian's normal, because they're so nicely characterized.
+
+We have nice rules of thumb that tell us how close things lie to the mean, et certera.
+
+heuristic[hyo͞oˈristik]: enabling someone to discover or learn something for themselves.
+guideline[ˈɡīdˌlīn]
+** A rule of thumb is a heuristic guideline that provides simplified advice or some basic rule-set regarding
+a particular subject or course of action.
+
+>> However, it's important to understand that if something is not actually normally distributed and we pretend it is,
+we can get very misleading results out of our model.
+
+Let's think about the fact that not all(negatives) distribution are normal.
+
+So consider rolling a single die.
+>> Each of the 6 outcomes is equally probable.
+we would not expect to see a peak as 3 or 4, and a trough[trôf] at 1. A 3 or a 4 is the same probability as 1
+>> ... be the same sth(noun.) as ....
+trough[trôf]: 食槽, a long, narrow open container for animals to eat or drink out of.
+
+>> Similarly....
+if one thinks about the Massachusetts state lottery, or any fair lottery,
+>> each number coming up
+** The probability of each number coming up is the same.
+So it would be a flat[flat] line.
+flat[flat]: smooth and even; without marked lumps or indentations.
+lump[ləmp]: 块
+indentation[ˌindenˈtāSH(ə)n]: 缩进; a deep recess[ˈrēˌses] or notch[näCH] on the edge or surface of something.
+
+> If you had a million numbers(plural), the probability of each number is 1 over a million.(1/1,000,000)
+> And so if you plotted the probability of each number again, you'd get a flat line.
+**>> Such distributions are called uniform because each result(singular) is equally probable.
+
+We can fully characterize a uniform distribution with a single parameter, its range.
+If I tell you it ranges over 1 to a million, that's all you need to know what the distribution looks like.
+** A uniform distribution is the one in which all the values are equally possible within a given range.
+>> They're even simpler than normal distributions. Uniform distributions occur quite often in games devised by humans,
+but almost never in nature.
+>> ..sth.. occur quite often in ..[some field].., but almost never in ..[some field]..
+devise[dəˈvīz]: plan or invent (a complex procedure[prəˈsējər], system, or mechanism) by careful thought.
+procedure[prəˈsējər]: an established or official way of doing something.
+
+>> Typically they're not very useful for modeling complex systems.
+>> ..(we).. have to work hard to do sth.
+e.g. we have to work hard to invent things that are uniform.
+** Most things are not naturally that way.
+>> as we do ..[time]..
+Normally, as we saw last time, occurs all the time in nature.
+The other thing that occurs quite frequently are exponential distributions.
+
+>> ... be used in ...
+>> They're used in a lot of different ways.
+For example, people who are trying to plan things like highway systems use exponential distributions to model
+inter-arrival times, how much time there is between each car(singular) entering the Mass Turnpike.
+We'll see many other examples of them.
+
+>> The key thing about them is...
+... they have the property of being memoryless.
+
+>> The property of being [adjective]
+They are in fact the only continuous distributions that are memoryless.
+
+Let's look at an example with which some of you are more familiar than you want to be, the concentration of
+a drug in the human body
+
+concentration: 浓度, the relative amount of a given substance contained within a solution or in a particular volume of
+space; the amount of solute[ˈsälyo͞ot] per unit volume of solution.
+solute[ˈsälyo͞ot]: 溶质, he minor component in a solution, dissolved in the solvent.
+solvent[ˈsälvənt]: 溶剂, the liquid in which a solute is dissolved to form a solution.
+
+>> For those who are watching on ....
+>> It's not because.... It's because....
+e.g. It's not because all the students are drug users. It's because they're working on a problem set that involves
+modeling drugs in the human body.
+
+I don't know how many of you are drug users, all right?
+Assume that at each time step(singular), each molecule[ˈmäləˌkyo͞ol] has a probability p of being cleared by the body.
+The system is memoryless in the sense that at each step, the probability of (a particular molecule being cleared) is
+independent of what happened at the previous steps. So the fact that a molecule didn't get cleared at time(t) has no
+impact on whether or not it will be cleared at time, t1.
+
+The probability doesn't go up as it doesn't get cleared. So it's independent of the previous steps.
+
+>> ..sth.. still being in ..[some place]..
+Q: At time t equals 1, what's the probability of the molecule still being in the human body?
+A: If the probability of being cleared at each step is p, (the answer)it's 1 minus p.(1-p)
+> if the probability of being cleared was 0.5 at each time step, the time that it still exists after the first time step
+  is 1 minus 0.5. i.e., 0.5
+
+*** i.e. means that is
+
+Q: What's the probability of it still being in the human boday at time t equals 2?
+It wasn't cleared at time 1, since it's memoryless(independent), whether or not it's cleared at times 2, is also 1/p.
+so it's existing still after two steps is going to be (1-p)**0.5, 1 minus p squared.
+We saw that with independent probabilities. And the nice thing about working with exponential distributions is we know that
+the probabilities are independent.
+exponential[ˌekspəˈnen(t)SH(ə)l]
+
+>> More generally, it's still being in the body at time t is going to be (1-p)^t, 1 minus p to the t.
+So now we have a nice closed-form solution (that will give us the probability of each molecule surviving until time t).
+
+>> ... give(s) sb(us) sth...
+
+Let's look at the question of, suppose that at time t=0 (t equals 0), there are m0 molecules.
+
+>> ... be(is) likely to be at ..[time]..
+Q: Now we can ask, how many molecules are there likely to be at any time t?
+A: Let's write a little program to look at that.
+
+struggle[ˈstrəɡəl]
+phrase[frāz]
+
+{decay[dəˈkā]:to decrease usually gradually in size, quantity, activity, or force}.
+gradually[ˈɡrajo͞oəlē]: in a gradual way; slowly; by degrees.
+
+>> it never gets there ....
+> exponential decay. It drops very quickly in the beginning, and then it asymptotes towards 0. But of course
+  it never quite gets there in a continuous model.
+> If we had a discrete model, we would eventually have to get to 0, because that last molecule would either
+  get cleared or not.
+> But in a continuous world, which is in this case, probably not a good model, or not a perfect model I should say,
+  because it allows us to have a quarter of a molecule there, which we kind of know is physiologically nonsense,
+  biochemically nonsense.
+
+asymptote[ˈasəm(p)ˌtōt]: noun. a line that continually approaches a given curve but does not meet it at any finite
+                         distance.
+physioloically[ˌfizēəˈläjək(ə)lē]: in a way that relates to the functions of living organisms[ˈôrɡəˌnizəm] and
+                                   their parts.
+organism[ˈôrɡəˌnizəm]: an individual animal, plant, or single-celled[sel] life form.
+
+You can see we get this exponential decay.
+>> But as we saw previously, if we plot an exponential on a log axis, as the math would tell us, we get a straight line.
+
+And that, in fact, is a very simple and nice way to see whether you have an exponential distribution.
+>>> Put it on a log axis, see if it's straight.
+
+It's a good trick, and one we use a lot.
+So there, I look the physical model I described and derived through a little bit of math, what the result
+should be, and implemented some code to give us a plot of what that told us.
+
+derive[dəˈrīv]: obtain something from (a specified source).
+
+>> Let's look at a different way of doing it.
+I could have instead written a Monte Carlo simulation to do the same kind of thing.
+> So here, instead of working out the probabilities, I just tried to write some code that exactly mimicked the
+  physical process that I was talking about.
+> So instead of knowing that I could just look at 1 minus p to the t, at each step, I cleared some molecules.
+
+mimic[ˈmimik]: imitate (someone or their actions or words), especially in order to entertain or ridicule.
+imitate[ˈiməˌtāt]: take or follow as a model.
+
+>> I did that for each molecule, deciding whether or not it should be cleared.
+
+> Let's look what happens if compare the two results.
