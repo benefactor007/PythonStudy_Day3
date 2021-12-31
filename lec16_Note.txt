@@ -173,3 +173,57 @@ imitate[ˈiməˌtāt]: take or follow as a model.
 >> I did that for each molecule, deciding whether or not it should be cleared.
 
 > Let's look what happens if compare the two results.
+
+Add on Friday afternoon, Dec. 31.
+>> Well, much to my relief, I get kind of the same curve.
+> Not exactly. You'll notice that the blue curve, the analytical[ˌanəˈlidik(ə)l] model is a beautiful smooth
+  curve, whereas the red curve has got a little bit of jaggies.
+
+relief[rəˈlēf]: a feeling of reassurance and relaxation following release from anxiety[aNGˈzīədē] or distress[dəˈstres].
+reassurance[ˌrēəˈSHo͝orəns]: the action of removing someone's doubts or fears.
+whereas: in contrast or comparison with the fact that.
+jaggies[ˈjaɡəd]: having rough, sharp points protruding[prəˈtro͞odiNG].
+protruding[prəˈtro͞odiNG]: sticking out; projecting.
+
+> It's clearly very similar to the blue curve, but not identical.
+identical: similar in every detail; exactly alike.
+>> It doesn't surprise me.
+
+There is some randomness in there. And in fact, I could have gotten unlucky and gotten something that didn't
+look like the blue curve. But given the sample size, that would have been quite surprising.
+
+>> Which of ....
+Q: Which of these two models do you like better?
+We've got one I'll call the analytical model, and one I'll call the simulation model.
+> Both sho exponential decay[dəˈkā].
+>> That is to
+> That is to say the number of molecules declines exponentially, quite quickly.
+But they're not quite identical.
+Q: Which would we prefer or which would you prefer?
+A: There is no right answer for this.
+>> There is + no + (adjective) + (singular noun)
+Just for fun, I'll ask for a poll.
+Q: Who prefers the analytical model?
+Q: Who prefer the simulation?
+
+Somebody who prefers(Third-Person singular verb) the analytical, tell me why.
+> It looks a lot nicer. That's kind of human nature, to prefer something that looks prettier.
+On the other hand, (what we're really interested in) is the question of not aesthetics[esˈTHediks],
+but fidelity to the actual physical situation
+
+aesthetics[esˈTHediks]: a set of principles concerned with the nature and appreciation of beauty,
+                        especially in art.
+fidelity[fəˈdelədē]: faithfulness to a person, cause, or belief, demonstrated by continuing loyalty
+                      and support.
+
+A straight line might look even nicer, but it wouldn't be accurate.
+So when we think about evaluating a model, what we really should be asking, I think, are two questions.
+** One is fidelity
+** And another way to think about that is credibility.
+
+
+
+
+
+
+
