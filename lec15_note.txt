@@ -83,6 +83,8 @@ reasons people don't use it as often because they don't want to bother giving th
 *** If the mean is near 0, small changes in the mean are going to lead to large changes in the coefficient
 of variance. They're not necessarily very meaningful.
 
+*** So when the mean is near 0, the coefficient of variation is something you need to think about with
+    several[ˈsev(ə)rəl] grains of salt.
 
 "(With) a grain[ɡrān] of salt", (or "a pinch of salt") is an idiom[ˈidēəm] of the English language, which means to
 view something with scepticism or not to interpret something literally.

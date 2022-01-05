@@ -1,6 +1,6 @@
 # coding=uft-8
 
->> sb ended up date(last Thursday's) lectures (talking about Gaussian distributions).
+>> sb(He) ended up date(last Thursday's) lectures (talking about Gaussian distributions).
 
 As he said, one of the interesting things(plural) about a Gaussian is it can be fully characterized
 by its mean and its standard deviation.
@@ -221,8 +221,142 @@ So when we think about evaluating a model, what we really should be asking, I th
 ** One is fidelity
 ** And another way to think about that is credibility.
 
+Add on Wednesday night, Jan. 5.
+
+> Typically, we're creating a model because we don't know the actual answer.
+>> ... be trying to do sth(what happen)
+And we're trying to see what might actually happen if we, say, ran a physical experiment.
+>> we have to ask the question of, .......
+And so we have to ask the question of, do we believe the results (that) the model are giving us.
+>>>
+
+    boil down:  to reduce in bulk[bəlk]{the mass or magnitude of something large.} by boiling; condense, summarize
+                e.g. boil down the report.
+    condense:   make (something) denser or more concentrated.
+                e.g. The limestones of the Jurassic[jəˈrasik] age are condensed into a mere 11 feet.
+    mere[mir]:   that is solely or no more or better than what is specified.
+    solely[ˈsō(l)lē]:   not involving anyone or anything else; only
+    anyone else:    any other person
+                    e.g. she arrived 10 minutes before anyone else.
+
+>>> So that sort of boils down to not a question of mathematics, but a question of reasoning.
+    Can we look at the model and convince ourselves that it is accurate?
+
+    convince:   cause (someone) to believe firmly in the truth of something.
+
+*** The other question is utility.
+    utility:    the state of being useful, profitable, or beneficial.
+
+>>> I can think about that as in some sense, what questions are answerable with the model?
+    >>> .... be answerable with sth...
+    The first one is pretty much a question of personal preference.
+    And for this particular simulation, which is pretty simple, or this particular model, it's hard to argue that
+    one is more believable than the other.
+    I might argue the second is more believable, because it's a direct implementation of the physical system.
+    I didn't rely on my math being right. But the math is pretty simple here.
+    >>> .... rely on sth being right ....
 
 
+*** What is more apparent is in this case there is some additional utility offered by the simulation model.
+    >>> apparent: adjective. clear or manifest to the understanding
+    >>> manifest[ˈmanəˌfest]: adjective. able to be seen : clearly shown or visible;  easy to understand or recognize
+                    e.g. Their sadness was manifest in their faces.
+                    e.g. The truth was more manifest[=(more commonly) obvious] to everyone but me.
+>>> It's often true of that, simulation models, that we can ask what-if questions, because we can easily change the
+    model to be slightly different in ways that is usually harder for an analytic model.
+
+    For example, suppose these drug molecules has this peculiar property that every 100 time steps, they could clone
+    themselves. And so every molecule that was there became two molecules.
+    >>> peculiar[pəˈkyo͞olyər]: adjective, special, particular
+
+    Not so unlikely for, a bacterium or a virus as you've seen.
+    >>> bacterium[ˌbakˈtirēəm]: 细菌
+
+    A little hard to figure out how to do the probabilities in the case that happens, because we'll no longer get this
+    beautiful simple exponential decay. But quite easy to think about how we would change the simulation model, which is
+    what I have done here.
+    >>> .... will no longer get sth.
+
+    Every living molecule will clone itself.
+    And now we'll see what we get.
+
+>>> Well, we get this rather peculiar-looking sawtooth distribution.
+    >>> rather: in some degree : SOMEWHAT
+                e.g. it's rather warm
+                —often used as a mild intensive[]
+                e.g. spent rather a lot of money
+        somewhat:   adverb. slightly,
+                    e.g.  He felt somewhat awkward in his suit.
+                          Our work has progressed somewhat.
+                          The course is somewhat more difficult than I was told it would be.
+        sawtooth[ˈsôto͞oTH]:   having serrations : arranged or having parts arranged like the teeth of a saw
+        serration: noun. a tooth or point of a serrated edge or surface.
+    We still have, overall, an exponential decay. But we see every once in while it jumps up, and then it comes down.
+    >>> ... do every once in while + object(....)
+        It's not so easy to write a simple closed-form formula that describes this. (so the analytics model is not
+        applicable), but very easy to produce a simulation model that gives you some insight to what's happening here.
+    >>> insight[ˈinˌsīt]:    the ability to understand people and situations in a very clear way
+                             e.g. He is a leader of great insight.
+    And that's, I think, one of the great attractions of simulation modeling, is we get to do this sort of thing.
+
+>>> Many physical systems exhibit[iɡˈzibət] exponential decay or exponential growth.
+    For example, people in Japan now are very interested in half-life of various radioactive[ˌrādēōˈaktiv] particles.
+    And when we talk about half-life, we mean that there is exponential decay in radioactivity.
+    That's what half-life is.
+    So people are looking at what is the half-life of iodine[ˈīəˌdīn], versus other radioactive particles.
+    >>> iodine [ˈīəˌdīn]:   碘
+    We also see exponential growth a lot.
+    I used to have a swimming pool which I had to maintain, and I realized if I let the algae get out of control in the
+    pool, it went from having very little algae to having a lot of algae very quickly, because the algae doubles every
+    period[ˈpir-ē-əd ]. And so all of a sudden, it takes off.
+    >>> alga [ˈalɡə]:   plural: algae
+    So exponential growth is exponential decay are important things. ????
+    We see them all the time.
+    People use the word very carelessly when they mean quick growth. They say exponential. But of course, it has a very
+    specific meaning.
+
+>>> We've now, for the moment at least, finished out short venture into probability and distributions.
+    >>> ... do finish venture into ....(object)
+    We'll come back to it a little bit when we talk about how to lie with statistics.
+    But before we do that, before we leave probability for a while, just for fun, I want to pose to you one of these
+    probability problems that hurts people's heads.
+
+    It's a very popular one.
+    Q: how many people here have heard of the Monty Hall[hôl] problem?
+    Monty Hall
+    Monty Hall
+    Money Hall
+
+    >>> As we play the game, those of you who know the answer, I'll ask you forbearance not to blurt it out.
+        >>> forbearance [fôrˈberəns]: patient self-control; restraint and tolerance.
+            restraint [rəˈstrānt]:  noun. a measure or condition that keeps someone or something under control or
+                                    within limits.
+                                    e.g. decisions are made within the financial restraints of the budget.
+            tolerance [ˈtäl(ə)rəns]:    the ability or willingness to tolerate something, in particular the existence of
+                                        opinions or behavior that one does not necessarily agree with.
+                                        e.g. the tolerance of corruption.
+            tolerate [ˈtäləˌrāt]:   allow the existence, occurrence, or practice of (something that one does not
+                                    necessarily like or agree with) without interference.
+            blurt [blərt]: say (something) suddenly and without careful consideration.
+
+    >>> It's a wonderful problem.
+        It's so exciting that people have written books about it.
+        So here's how it works.
+        This is from a game show called, Let's make a deal, with the host, Monty Hall, who did it forever.
+        So (the way it works) is you start with three doors. Behind one of the doors is a great prize. e.g. an
+        automobile[ˌȯ-tə-mō-ˈbēl ].
+        >>> automobile: automotive
+        Behind each of the other is a booby prize, typically a goat.
+        I don't know why people don't like goats, but apparently they don't.
+        So the way it works is Monty invites someone from the audience, chosen on the basis of their outlandish costumes.
+        >>> outlandish [outˈlandiSH]:   looking or sounding bizarre[bəˈzär] or unfamiliar.
+        >>> costume [ˈkä-ˌstüm]:    a set of clothes in a style typical of a particular country or historical period.
+        And they come down and they're told what wonderful prize is behind one of the doors.
+        >>> come down:  Literally, to descend[dəˈsend] from a higher point to a lower one
+                        to place oneself in opposition
+        And then they're asked to choose a door.
+        So the person might choose a door and say, I'll choose door number one.
+        end up at 23:23, lec 16
 
 
 
