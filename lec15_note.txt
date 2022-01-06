@@ -263,7 +263,7 @@ empirical[əmˈpirik(ə)l]: based on, concerned with, or verifiable by observati
 Empirical rule: They give us a handy way to estimate confidence intervals given the mean and the standard deviation.
 e.g. If we have a true normal distribution, then roughly[ˈrəflē] speaking, 68%(not exactly) of the data are within the
 one standard deviation of the mean. 95%(not exactly) percent with two standard deviations, and almost all, 99.7% will
-fall within three(.
+fall within three stand deviations.
 
 >> These values are approximations.[əˌpräksəˈmāSH(ə)n], and they're not exactly right.
 In fact, they're good enough for government work.

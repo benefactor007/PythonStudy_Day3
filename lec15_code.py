@@ -132,7 +132,7 @@ def makePlots(nf1, nf2, nt):
     labelPlot(nf2, nt, mean2, sd2)
 
 
-def poll(n,p):
+def poll(n, p):
     """
 
     :param n: total number of votes
@@ -141,20 +141,28 @@ def poll(n,p):
     """
     votes = 0.0
     for i in range(n):
-        if random.random() < p/100.0:
+        if random.random() < p / 100.0:
             votes += 1
     return votes
 
-def testErr(n = 1000, p =46.0, numTrials = 1000):
-    results  = []
+
+def testErr(n=5000, p=46.0, numTrials=1000):
+    results = []
     for t in range(numTrials):
-        results.append(poll(n,p))
-    print("std = "+ str((stdDev(results)/n)*100) + '%')
+        results.append(poll(n, p))
+    print("size of result: " + str(len(results)))
+    print("standard deviation: " + str(stdDev(results)))
+    print("std = " + str((stdDev(results) / n ) * 100) + '%')
+    """
+    什么是标准误差（standard error）呢？看了些文献，有的还是大牛的，定义都不统一，通常来说有两种定义方式：
+    1.样本容量为n的标准误差是样本的标准差除以sqrt(n)。ps：这里还有人用样本的标准差除以n来作为标准误差
+    （预计是弄错了，只是标准误差是基于整体均值来预计标准差，所以也没有必要说人家错）；
+    """
     #  People sometimes call the standard deviation
     # of a set of numbers the "population standard deviation", and write it as σ(n)
     # if we want to get the σ(sigma) which have to divide by n(Sample size)
     # to format as % by using multiple one hundred(100) first.
-    results = pylab.array(results)/n
+    results = pylab.array(results) / n
     pylab.hist(results)
     pylab.xlabel("Fraction of Votes")
     pylab.ylabel("Number of Polls")
@@ -173,7 +181,6 @@ def main():
     # testErr(n=10000,numTrials=10000)
     testErr()
     pylab.show()
-
 
 if __name__ == '__main__':
     main()
