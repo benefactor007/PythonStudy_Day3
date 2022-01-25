@@ -38,7 +38,7 @@ Those of you (are majoring in math) are going to love that.
 
 >> But for those of you who are more computationally(adv.) oriented. --> academically oriented.
 I recommend you just take a look at teh code.
-
+mean
 Now we know what standard deviation means. What are we going to do with it?
 We're going to use it to look at the relationship between the number of samples (we've looked
 at) and how much confidence we should have in the answer.
